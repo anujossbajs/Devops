@@ -1,0 +1,3 @@
+# Create an Ansible Playbook for installing nginx on Ubuntu
+
+ansible-playbook nginx.yml --connection=local

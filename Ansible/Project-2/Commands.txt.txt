@@ -1,0 +1,4 @@
+# Create an Ansible Playbook for Building and Deploying a Dockerized Mario Game App on  Ubuntu
+
+cd mariohtml5
+ansible-playbook -i inventory mario.yml --connection=local

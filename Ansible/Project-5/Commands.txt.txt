@@ -1,0 +1,5 @@
+# Create an Ansible Playbook for installing nginx on Ubuntu
+
+cd Project-5
+sudo ansible-galaxy init demo
+ansible-playbook roles.yml --connection=local

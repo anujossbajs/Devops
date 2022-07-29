@@ -1,0 +1,10 @@
+# Run The Impossibe Insect Game in Docker:
+
+yum install git
+git clone https://github.com/anujossbajs/50projects50days.git
+cd ~/50projects50days/insect-catch-game
+docker run -d -p 8080:80 --name game -v $(pwd):/usr/share/nginx/html nginx
+docker exec -it game bash
+ #ls /usr/share/nginx/html
+ #exit
+curl http://localhost:8080

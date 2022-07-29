@@ -1,0 +1,8 @@
+# Run a python Flask App inside a Docker container from a Dockerfile:
+
+docker build . -t anujose1234/mypythonapp
+docker run -d -p 8085:5000 anujose1234/mypythonapp
+docker push anujose1234/mypythonapp
+
+
+Replace anujose1234 with your DockerHub Id 

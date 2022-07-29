@@ -1,0 +1,9 @@
+---
+# tasks file for demo
+- name: install nginx
+  yum: pkg=nginx state=present update_cache=true
+  notify:
+         - start nginx
+
+- name: upload
+  copy: src=files/index.html dest=/var/www/html mode=0644

@@ -1,0 +1,4 @@
+# Create an Ansible Playbook for installing Telenet on Ubuntu
+
+cd testplaybook
+ansible-playbook -i inventory foo.yml --connection=local

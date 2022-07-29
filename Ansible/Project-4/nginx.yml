@@ -1,0 +1,21 @@
+---
+- hosts: 127.0.0.1
+  connection: local
+  become: true
+  tasks:
+         - name: install nginx
+           yum: 
+               pkg: nginx
+               state: present
+           notify:
+                - run update
+         - name: start nginx
+           service:
+             name: nginx
+             state: started
+             enabled: true
+
+  handlers:
+       - name: run update
+         yum: 
+            update_cache: yes

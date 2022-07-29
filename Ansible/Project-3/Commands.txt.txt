@@ -1,0 +1,4 @@
+#  Create an Ansible Playbook for Installing Wordpress on a LAMP Stack on Ubuntu
+
+cd wordpressplaybook
+ansible-playbook -i inventory playbook.yml --connection=local

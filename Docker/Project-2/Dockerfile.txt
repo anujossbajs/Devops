@@ -1,0 +1,5 @@
+FROM python:3
+WORKDIR /usr/src/app
+RUN pip install flask
+COPY web.py ./web.py
+ENTRYPOINT FLASK_APP=./web.py flask run --host=0.0.0.0
