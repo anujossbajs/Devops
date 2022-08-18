@@ -1,0 +1,5 @@
+1. kubectl apply -f dashboard-ingress.yaml
+2. kubectl get -n kubernetes-dashboard
+3. sudo vim /etc/hosts
+  ipadress dashboard.com
+4. kubectl describe ingress dashboard-ingress -n kubernetes-dashboard
