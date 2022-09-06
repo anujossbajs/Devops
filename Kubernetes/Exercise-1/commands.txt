@@ -1,0 +1,8 @@
+docker build -t app-rockme:ver1.0 .
+docker images
+kubectl create deployment app-rockme --image app-rockme:ver1.0
+kubectl get deployments
+kubectl get pods
+kubectl create service loadbalancer app-rockme --tcp=8500:8500
+kubectl get services
+#open url in browser
